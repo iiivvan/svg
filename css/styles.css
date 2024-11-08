@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la imagen personal */
+.imagen-personal {
+    width: 20%;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    background-color: lightblue; /* Fondo ligeramente diferente */
+}
+
+/* Estilo para el h1 (nombre) */
+h1 {
+    width: 60%;
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilo para el SVG */
+svg {
+    width: 20%;
+    background-color: rgb(255, 0, 0); /* Fondo ligeramente diferente */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Media query para pantallas menores de 800px */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagen-personal {
+        width: 50%; /* Imagen al 50% */
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        width: 100%; /* Nombre al 100% */
+        margin-bottom: 20px;
+    }
+
+    svg {
+        width: 100%; /* SVG al 100% */
+    }
+}
